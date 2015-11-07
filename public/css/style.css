@@ -1,0 +1,115 @@
+.number span {
+    background: #5cb85c;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 80px / 50px;
+    padding: 5px 25px 5px 25px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.number {
+    margin-top: 8px;
+}
+
+.glyphicon {
+    font-size: 30px;
+    color: red
+}
+
+input {
+    margin-top: 8px;
+    height: 28px;
+}
+
+.mar-top {
+    margin-bottom: 10px;
+}
+
+.but_save button {
+    height: 40px;
+    color: #fff;
+    background-color: #6dcbcd;
+    text-align: center;
+    border: 0px;
+    min-width: 80px;
+    margin-right: 25px;
+}
+
+.state button {
+    height: 40px;
+    color: #000;
+    text-align: center;
+    border: 0px;
+    min-width: 80px;
+    margin-right: 25px;
+    background-color: #ccc;
+}
+
+.state .active {
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: #6dcbcd;
+    border: 0px;
+    min-width: 80px;
+    margin-right: 25px;
+}
+
+.fileinput button {
+    font-size: 14px;
+    height: 30px;
+    background-color: #6dcbcd;
+    color: #fff;
+    border: 0px;
+}
+
+.inp {
+    margin-top: 5px;
+}
+
+.inp input {
+    width: 5%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.time-bac {
+    height: 30px;
+    line-height: 30px;
+    background-color: #6dcbcd;
+    width: 120px;
+    color: #fff;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.col-md-12 {
+    margin-bottom: 8px;
+    
+}
+
+.title_news {
+    position: absolute;
+    background-color: #333;
+    width: 89%;
+    bottom: 0px;
+    min-height: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.title_news span {
+    padding-left: 5px;
+}
+
+.size {
+    color: red;
+}
+.but-hide{
+    display: disabled;
+}
+.release{
+    background-color: #ccc;
+}

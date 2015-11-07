@@ -1,0 +1,115 @@
+<%- include layouts/header.ejs %>
+<link rel="stylesheet" type="text/css" href="/../css/all.css">
+
+<style type="text/css">
+   .fixed-table-toolbar{
+    float: left !important;
+   } 
+   h4{
+    width: 30%;
+    float: left;
+   }
+   .inser1{
+    margin:10px auto;
+    clear: both;
+   }
+   .inser1 input{
+    float: left;
+    border: 1px #ccc solid;
+    margin-top: 7px;
+   }
+   .modal-content{
+    height: 280px !important;
+    margin-top: -20% !important;
+   }
+
+</style>
+<title>玩礼科技</title>
+<div class="container service-page">
+    <div class='col-md-12'><h2>玩礼-个性印品定制</h2></div>
+
+    <div role="tabpanel" class="tab-pane active" style="margin-bottom:20px;">        
+        <table id="loadAllCoupon"         
+        data-row-style="rowStyle"
+        data-toolbar="" 
+        data-search="true" 
+        data-pagination="true"
+        data-height="480"
+        data-cache="false"
+        data-page-size="10"     
+        data-click-to-select="true">
+        <thead>
+            <tr>
+                <th data-field="choes_id" data-align="center" data-checkbox="true" ></th>                
+                <th data-field="id" data-align="center" >序号</th>                
+                <th data-field="pin_code" data-align="center">礼券编号</th>                
+            </tr>
+        </thead>
+        </table>
+        <div><button style='margin-right:5%;' type="button" data-toggle="modal" data-target="#myModal">提交</button><button onclick='refresh()'>刷新</button></div>
+    </div>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"  id='myModal'>
+      <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class='col-md-12 text-center inser1'><h4>单位:</h4><input></div>
+                <div class='col-md-12 text-center inser1'><h4>姓名:</h4><input></div>
+                <div class='col-md-12 text-center inser1'><h4>电话:</h4><input></div>
+                <div class='col-md-12 text-center inser1'><h4>地址:</h4><input></div>
+                <div class='col-md-12 text-center inser1'><h4>广告语:</h4><input></div>
+                <div class='inser1 text-center' style='padding-top:14px;' >
+                    <button style='margin-right:5%;' type="button" data-toggle="modal" data-target="#myModal" onclick='submit()'>确认</button>
+                    <button onclick='cancel()'>取消</button>
+                </div>
+            </div>
+
+      </div>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+var tmp_arr =new Array();
+var arealist_arr = new Array();
+$(function() {
+    loadAllCoupon(); 
+});
+
+
+
+function loadAllCoupon() {
+    $.ajax({
+        type: "post",
+        url: '/loadAllCoupon',               
+        success: function(result) {
+            if (result.success) {
+               // arealist_arr = result.data;
+                $('#loadAllCoupon').bootstrapTable({
+                    data: result.data
+                });
+            } else {
+                $('#loadAllCoupon').bootstrapTable({
+                    data: ' '
+                });
+            }
+        }
+    })
+}
+
+function submit(){
+     var selects = $('#loadAllCoupon').bootstrapTable('getSelections');
+     console.log(selects)
+    
+
+}
+function cancel(){
+    $('#myModal').modal('hide');
+}
+
+function refresh(){
+    window.reload();
+}
+
+
+</script>
+<%- include layouts/footer.ejs %>

@@ -1,0 +1,70 @@
+/*------ universal -----------*/
+.u-margin-top-1{
+	margin-top: 10px
+}
+.u-margin-top-2{
+	margin-top: 20px
+}
+.container{
+      background-position: 0% 0%;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      /*text-align:center;*/
+}
+
+/*-------lottery.ejs nt-example3 ---------*/
+#nt-example3 {
+	margin-top: 40px ;
+	padding-left:0;
+	text-align: center;
+}
+
+#nt-example3-container {
+	text-align: center;
+	margin: 8px;
+	margin-top: 20px;
+}
+
+#nt-example3-container i {
+	font-size: 36px;
+	background-color: #22004d ;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#lottery-people-table  {
+	background-color: rgba(34, 0, 77, 0.6);  
+	color:#fff;
+}
+
+#lottery-people-table tr:hover {
+	background: #22004d;
+}
+
+#nt-example3-container i:hover {
+	color: #333;
+}
+
+#nt-example3 li {
+	color: #fff;
+	overflow: hidden;
+	height: 80px;
+	padding: 10px;
+	line-height: 60px;
+	font-size: 40px;
+	text-transform: uppercase;
+	list-style: none;
+	background-color: rgba(34, 0, 77, 0.6); 
+	/*filter:alpha(opacity=60);  
+    -moz-opacity:0.6;  
+    -khtml-opacity: 0.6;  
+    opacity: 0.6;*/
+}
+
+#nt-example3 li:hover {
+	background: #22004d;
+}

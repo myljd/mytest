@@ -1,0 +1,81 @@
+.col-a-cor a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.col-a-cor {
+    padding-left: 0px;
+    margin-top: 10px;
+}
+.col-a-cor .col-md-1{
+    padding-left:0px;
+}
+
+.col-a-cor a:hover {
+    color: #fff;
+}
+
+.col-back {
+    height: 40px;
+    line-height: 40px;
+    background-color: #6dcbcd;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.col-top {
+    margin-top: 20px;
+    padding-left: 0px;
+}
+
+.sweet-alert h4 {
+    color: #6dcbcd;
+}
+
+.modal-dialog {
+    margin: 250px auto;
+    height: 30px;
+}
+
+.modal-content {
+    height: 100px;
+}
+
+.col-top {
+    margin-top: 30px;
+}
+
+#packingcharges {
+    height: 40px;
+}
+
+.col-top a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.create-height {
+    height: 500px;
+}
+
+select {
+    width: 80px;
+    margin-left: 300px;
+    margin-top: 6px;
+}
+
+.select-style {
+    margin-left: 400px;
+    height: 30px;
+    line-height: 30px;
+}
+
+button {
+    background-color: #6dcbcd;
+    color: #fff;
+    border: 0px;
+    height: 40px;
+    width: 85px;
+    font-size: 16px;
+    /*margin-top: 20px;*/
+}
